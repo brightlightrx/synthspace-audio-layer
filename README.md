@@ -85,10 +85,10 @@ So all signals are between -1 and 1, but really mean different things. To make o
 The other way of coding nodes for Synthspace is using **FAUST** (https://faust.grame.fr/)
 
 The workflow looks like this: 
-Use the Faust web IDE (https://faustide.grame.fr/) to create a node
-Compile it to a library
-Import that into unity 
-Turn the wrapper into an AudioDataNode.
+* Use the Faust web IDE (https://faustide.grame.fr/) to create a node
+* Compile it to a library
+* Import that into unity 
+* Turn the wrapper into an AudioDataNode.
 
 The repository contains the Flanger as an example - have a look at how ProcessData assigns parameters and tells the Faust Context to process its data and write the result directly into the Flanger Output.
 
